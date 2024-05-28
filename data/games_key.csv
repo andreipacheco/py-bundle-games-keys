@@ -11,7 +11,7 @@ id,game,key,active,bundle-name
 10,Death Stranding,PLF0-M5C3-LFB2,TRUE,premium
 11,Doom Eternal,0U8C-SFTI-TOVM,TRUE,premium
 12,Final Fantasy XV,Y7ML-MRI4-WCAE,TRUE,premium
-13,Dark Souls III,Q756-NS7Q-H3QW,TRUE,premium
+13,Dark Souls III,Q756-NS7Q-H3QW,FALSE,premium
 14,Dark Souls II,KVKB-DB9B-6M9D,TRUE,premium
 15,Dark Souls,IBSJ-9MX7-1C2X,TRUE,premium
 16,Demon's Souls,QHX7-RKRW-8NX2,TRUE,premium
@@ -35,7 +35,7 @@ id,game,key,active,bundle-name
 34,Ghost of Tsushima: Director's Cut,HU1N-GG9V-AR2Y,TRUE,premium
 35,Hades,W4SU-HV7N-JE92,TRUE,premium
 36,Cyberpunk 2077: Complete Edition,XE5J-2SG6-YK3L,TRUE,premium
-37,Final Fantasy VII Remake,WV9D-PN5G-QM0A,TRUE,premium
+37,Final Fantasy VII Remake,WV9D-PN5G-QM0A,FALSE,premium
 38,Persona 5 Royal,MN1R-4SZO-6LCP,TRUE,premium
 39,God of War Ragnarok,F0ZP-8LJI-6XCE,TRUE,premium
 40,Horizon Forbidden West,QP3W-KV5B-ZSL7,TRUE,premium
@@ -49,8 +49,23 @@ id,game,key,active,bundle-name
 48,Call of Duty: Modern Warfare 2 Remastered,NE6G-TM0X-7K9A,TRUE,premium
 49,Silent Hill Reboot,F9RQ-HJ4P-W0DM,TRUE,premium
 50,Starfield,EP9M-6WNQ-8BXZ,TRUE,premium
-51,Starfield,ABCS-1234-0O9I,TRUE,premium
+51,Starfield,ABCS-1234-0O9I,FALSE,premium
 52,Starfield,876Y-HNGB-DCSA,TRUE,premium
 53,Starfield,IKLO-3EW1-ASDF,TRUE,premium
 54,Starfield,DCFG-EDRT-ASXE,TRUE,premium
 55,Starfield,5678-123E-EDR4,TRUE,premium
+56,Detroid: Become Human,ASWQ-123D-GERD,TRUE,premium
+57,Detroid: Become Human,FVFG-5567-7U8I,FALSE,premium
+58,Detroid: Become Human,FRQA-BNMK-U8I0,TRUE,premium
+59,Detroid: Become Human,4RFV-5THN-7UKM,TRUE,premium
+60,Detroid: Become Human,11WS-4R00-AAAW,TRUE,premium
+61,Dave The Diver,RRFQ-QQQ2-FVG8,TRUE,premium
+62,Dave The Diver,55YU-8I90-OKLP,FALSE,premium
+63,Dave The Diver,QAZX-FR12-5600,TRUE,premium
+64,Dave The Diver,SWS3-FG66-8890,TRUE,premium
+65,Dave The Diver,12SD-GBHY-6T5Z,TRUE,premium
+66,Baldur's Gate 3,90IJ-FR1Z-NMKK,TRUE,premium
+67,Baldur's Gate 3,DFAS-5R41-0097,TRUE,premium
+68,Baldur's Gate 3,GF78-GBKL-55AA,TRUE,premium
+69,Baldur's Gate 3,3E4M-H0PO-JPOI,TRUE,premium
+70,Baldur's Gate 3,FA56-HHU8-G1RT,TRUE,premium
