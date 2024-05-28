@@ -30,27 +30,27 @@ id,game,key,active,bundle-name
 29,Dark Souls II,22FI-RS30-F76D,TRUE,premium
 30,Dark Souls III,DSDH-NN0C-38VO,TRUE,premium
 31,Assassin's Creed Odyssey,X34P-QM9E-5HVA,TRUE,premium
-32,Spider-Man: Miles Morales,Z9JC-7M6N-LQSW,FALSE,premium
+32,Spider-Man: Miles Morales,Z9JC-7M6N-LQSW,TRUE,premium
 33,The Last of Us Part II,WXN3-KU7P-Z3RM,TRUE,premium
 34,Ghost of Tsushima: Director's Cut,HU1N-GG9V-AR2Y,TRUE,premium
-35,Hades,W4SU-HV7N-JE92,FALSE,premium
-36,Cyberpunk 2077: Complete Edition,XE5J-2SG6-YK3L,FALSE,premium
-37,Final Fantasy VII Remake,WV9D-PN5G-QM0A,FALSE,premium
-38,Persona 5 Royal,MN1R-4SZO-6LCP,FALSE,premium
-39,God of War Ragnarok,F0ZP-8LJI-6XCE,FALSE,premium
+35,Hades,W4SU-HV7N-JE92,TRUE,premium
+36,Cyberpunk 2077: Complete Edition,XE5J-2SG6-YK3L,TRUE,premium
+37,Final Fantasy VII Remake,WV9D-PN5G-QM0A,TRUE,premium
+38,Persona 5 Royal,MN1R-4SZO-6LCP,TRUE,premium
+39,God of War Ragnarok,F0ZP-8LJI-6XCE,TRUE,premium
 40,Horizon Forbidden West,QP3W-KV5B-ZSL7,TRUE,premium
-41,Deathloop,VV8C-JDSE-NV1R,FALSE,premium
-42,Resident Evil 4 Remake,Z6SK-JQ5M-9ELO,FALSE,premium
-43,Elden Ring,IO9D-PK3R-LGFD,FALSE,premium
+41,Deathloop,VV8C-JDSE-NV1R,TRUE,premium
+42,Resident Evil 4 Remake,Z6SK-JQ5M-9ELO,TRUE,premium
+43,Elden Ring,IO9D-PK3R-LGFD,TRUE,premium
 44,Mass Effect Legendary Edition,QW4L-MP8F-1VXW,TRUE,premium
 45,Gran Turismo 7,WG7H-NSI3-FE2P,TRUE,premium
-46,Final Fantasy XVI,SP4K-NA9Q-JIFG,FALSE,premium
+46,Final Fantasy XVI,SP4K-NA9Q-JIFG,TRUE,premium
 47,GTA VI,JZ8R-PY3S-LN0B,TRUE,premium
-48,Call of Duty: Modern Warfare 2 Remastered,NE6G-TM0X-7K9A,FALSE,premium
-49,Silent Hill Reboot,F9RQ-HJ4P-W0DM,FALSE,premium
-50,Starfield,EP9M-6WNQ-8BXZ,FALSE,premium
-51,Starfield,ABCS-1234-0O9I,FALSE,premium
+48,Call of Duty: Modern Warfare 2 Remastered,NE6G-TM0X-7K9A,TRUE,premium
+49,Silent Hill Reboot,F9RQ-HJ4P-W0DM,TRUE,premium
+50,Starfield,EP9M-6WNQ-8BXZ,TRUE,premium
+51,Starfield,ABCS-1234-0O9I,TRUE,premium
 52,Starfield,876Y-HNGB-DCSA,TRUE,premium
 53,Starfield,IKLO-3EW1-ASDF,TRUE,premium
 54,Starfield,DCFG-EDRT-ASXE,TRUE,premium
-55,Starfield,5678-123E-EDR4,FALSE,premium
+55,Starfield,5678-123E-EDR4,TRUE,premium
