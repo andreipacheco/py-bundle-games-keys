@@ -49,17 +49,23 @@ def enviar_email(destinatario, assunto, corpo):
     servidor = smtplib.SMTP(servidor_smtp, porta_smtp)
     servidor.starttls()
 
-    # Login no servidor SMTP com a senha de aplicativo
-    servidor.login(remetente, senha)
+    try:
+        # Login no servidor SMTP com a senha de aplicativo
+        servidor.login(remetente, senha)
 
-    # Enviando o email
-    servidor.send_message(mensagem)
+        # Enviando o email
+        servidor.send_message(mensagem)
 
-    # Fechando a conexão com o servidor SMTP
-    servidor.quit()
+        # Log de email enviado com sucesso
+        print("Email enviado com sucesso para:", destinatario)
 
-    # Log de email enviado com sucesso
-    print("Email enviado com sucesso para:", destinatario)
+    except smtplib.SMTPException as e:
+        print("Erro ao enviar o email:", e)
+        print("Resultado do bundle:")
+        print(corpo)
+    finally:
+        # Fechando a conexão com o servidor SMTP
+        servidor.quit()
 
 # Construindo o caminho completo para o arquivo
 nome_arquivo = os.path.join('data', 'games_key.csv')
@@ -73,17 +79,12 @@ jogos_ativos = [jogo for jogo in linhas if 'active' in jogo and jogo['active'].l
 if len(jogos_ativos) < 5:
     print("Não há jogos ativos suficientes para fazer o sorteio.")
 else:
-    # Conjunto para armazenar os jogos sorteados
-    jogos_sorteados = set()
-
     # Sorteando 5 jogos aleatórios sem repetição
-    while len(jogos_sorteados) < 5:
-        jogo_sorteado = random.choice(jogos_ativos)
-        # Verificando se o jogo já foi sorteado
-        if (jogo_sorteado['game'], jogo_sorteado['key']) not in jogos_sorteados:
-            jogos_sorteados.add((jogo_sorteado['game'], jogo_sorteado['key']))
-            jogo_sorteado['active'] = 'FALSE'
-            print(jogo_sorteado)
+    jogos_sorteados = random.sample(jogos_ativos, 5)
+
+    # Atualizando o status 'active' para 'False' nos jogos sorteados
+    for jogo in jogos_sorteados:
+        jogo['active'] = 'FALSE'
 
     # Chamando a função para escrever as alterações no arquivo CSV
     escrever_csv(nome_arquivo, linhas)
@@ -91,7 +92,11 @@ else:
     # Formatando os jogos sorteados para o corpo do email
     corpo_email = 'Jogos sorteados para o bundle:\n'
     for jogo in jogos_sorteados:
-        corpo_email += f"{jogo[0]}: {jogo[1]}\n"
+        corpo_email += f"{jogo['game']}: {jogo['key']}\n"
+
+    # Mostrando o resultado do bundle
+    print("Resultado do bundle:")
+    print(corpo_email)
 
     # Enviando email com o resultado do sorteio
     destinatario = 'destinatario_email@gmail.com'  # Substitua pelo endereço de email do destinatário do email
