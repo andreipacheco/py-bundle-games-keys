@@ -33,6 +33,8 @@ def enviar_email(destinatario, assunto, corpo):
     senha = 'sua_senha_de_aplicativo'  # Substitua pela sua senha de aplicativo
 
     # Configuração do servidor SMTP do Gmail
+    # Habilitar 2-Step Verification
+    # Sign in with app passwords https://support.google.com/accounts/answer/185833?hl=en
     servidor_smtp = 'smtp.gmail.com'
     porta_smtp = 587
 
