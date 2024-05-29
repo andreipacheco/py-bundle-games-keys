@@ -30,11 +30,11 @@ def escrever_csv(caminho_arquivo, linhas):
 # Função para enviar email com o resultado do sorteio
 def enviar_email(destinatario, assunto, corpo):
     remetente = 'seu_email@gmail.com'  # Substitua pelo seu endereço de email completo
+    # Habilitar 2-Step Verification
+    # Sign in with app passwords https://support.google.com/accounts/answer/185833?hl=en
     senha = 'sua_senha_de_aplicativo'  # Substitua pela sua senha de aplicativo
 
     # Configuração do servidor SMTP do Gmail
-    # Habilitar 2-Step Verification
-    # Sign in with app passwords https://support.google.com/accounts/answer/185833?hl=en
     servidor_smtp = 'smtp.gmail.com'
     porta_smtp = 587
 
