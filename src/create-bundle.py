@@ -82,11 +82,17 @@ if len(jogos_ativos) < 5:
     print("Não há jogos ativos suficientes para fazer o sorteio.")
 else:
     # Sorteando 5 jogos aleatórios sem repetição
-    jogos_sorteados = random.sample(jogos_ativos, 5)
+    jogos_sorteados = []
+    jogos_sorteados_nomes = set()
 
-    # Atualizando o status 'active' para 'False' nos jogos sorteados
-    for jogo in jogos_sorteados:
-        jogo['active'] = 'FALSE'
+    while len(jogos_sorteados) < 5:
+        jogo_sorteado = random.choice(jogos_ativos)
+        if jogo_sorteado['game'] not in jogos_sorteados_nomes:
+            jogos_sorteados.append(jogo_sorteado)
+            jogos_sorteados_nomes.add(jogo_sorteado['game'])
+            for linha in linhas:
+                if linha['game'] == jogo_sorteado['game'] and linha['key'] == jogo_sorteado['key']:
+                    linha['active'] = 'FALSE'
 
     # Chamando a função para escrever as alterações no arquivo CSV
     escrever_csv(nome_arquivo, linhas)
